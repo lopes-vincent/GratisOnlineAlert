@@ -62,7 +62,6 @@ class GratisListener extends BaseAction implements EventSubscriberInterface
         return array(
             TheliaEvents::PRODUCT_CREATE => [["checkPriceStopProp", 255], ["checkPriceSendMail", 30]],
             TheliaEvents::PRODUCT_UPDATE => [["checkPriceStopProp", 255], ["checkPriceSendMail", 30]],
-            TheliaEvents::PRODUCT_ADD_PRODUCT_SALE_ELEMENT => [["checkPriceStopPropSale", 255], ["checkPriceSendMailSale", 30]],
             TheliaEvents::PRODUCT_UPDATE_PRODUCT_SALE_ELEMENT => [["checkPriceStopPropSale", 255], ["checkPriceSendMailSale", 30]],
         );
     }
